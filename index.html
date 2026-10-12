@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - [Raisya Khairunnisa Fitri]</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --warna-utama: #d95fe4;
+            --warna-kedua: #e69be9;
+            --warna-terang: #dcbbe2;
+            --teks-gelap: #1f0627;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--teks-gelap);
+            background-color: #f0f7ff;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: var(--warna-utama);
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--warna-utama);
+            padding-bottom: 8px;
+        }
+
+        /* ===== Bagian Header / Hero ===== */
+        header {
+            background: linear-gradient(135deg, var(--warna-utama), var(--warna-kedua));
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .foto-profil {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin-bottom: 15px;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+
+        .kelas {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .cita-cita {
+            font-style: italic;
+            font-size: 1rem;
+            background: rgba(255,255,255,0.2);
+            display: inline-block;
+            padding: 6px 20px;
+            border-radius: 20px;
+        }
+
+        /* ===== Tentang Saya ===== */
+        #tentang {
+            background: white;
+        }
+
+        /* ===== Biodata ===== */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        td:first-child {
+            font-weight: bold;
+            width: 120px;
+            background: var(--warna-terang);
+        }
+
+        /* ===== Keahlian ===== */
+        .daftar-keahlian {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .keahlian {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid var(--warna-utama);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .keahlian:hover {
+            transform: translateY(-5px);
+        }
+
+        .keahlian h3 {
+            color: var(--warna-utama);
+            margin-bottom: 8px;
+        }
+
+        /* ===== Kontak ===== */
+        #kontak {
+            background: var(--warna-terang);
+        }
+
+        .link-kontak {
+            margin-top: 15px;
+        }
+
+        .link-kontak a {
+            display: inline-block;
+            background: var(--warna-utama);
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .link-kontak a:hover {
+            background: var(--warna-kedua);
+        }
+
+        /* ===== Kaki Halaman ===== */
+        footer {
+            background: var(--teks-gelap);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== BAGIAN 1: HEADER / HERO ===== -->
+    <header>
+        <img src="raisa.jpg" alt="Foto Profil" class="foto-profil">
+        <h1>[Raisya Khairunnisa Fitri]</h1>
+        <p class="kelas">[XI RPL]</p>
+        <p class="cita-cita">[Menjadi Dokter Umum]</p>
+    </header>
+
+    <!-- ===== BAGIAN 2: TENTANG SAYA ===== -->
+    <section id="tentang">
+        <h2>Tentang Saya</h2>
+        <p>Halo! 👋 Nama saya Raisya Khairunnisa Fitri, saya siswa yang sedang proses belajar pemrograman.</p>
+        <br>
+        <p><strong>Hobi:</strong> [Hobi saya menari, mendengarkan lagu dan menyanyi.]</p>
+        <p><strong>Minat:</strong> [Saya berminat untuk mengetahui lebih dalam tentang komputer dan pemrograman.]</p>
+    </section>
+
+    <!-- ===== BAGIAN 3: BIODATA ===== -->
+    <section id="biodata">
+        <h2>Biodata</h2>
+        <table>
+            <tr>
+                <td>TTL</td>
+                <td>[Pontianak, 30-04-2010.]</td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>[Jl. Sungai Raya Dalam, Komplek Mitra Indah Utama 5, Blok A-B, No B1.]</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>[raisyakhai54@gmail.com]</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- ===== BAGIAN 4: KEAHLIAN ===== -->
+    <section id="keahlian">
+        <h2>Keahlian</h2>
+        <p>Beberapa kemampuan yang sedang saya pelajari:</p>
+        <div class="daftar-keahlian">
+            <div class="keahlian">
+                <h3>🌐 HTML</h3>
+                <p>Mampu membuat program.</p>
+            </div>
+            <div class="keahlian">
+                <h3>🎨 Desain Canva</h3>
+                <p>Bisa membuat desain grafis sederhana.</p>
+            </div>
+            <div class="keahlian">
+                <h3>🗣️ Berbicara</h3>
+                <p>Mampu berkomunikasi dengan baik.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BAGIAN 5: KONTAK ===== -->
+    <section id="kontak">
+        <h2>Hubungi Saya</h2>
+        <p>Silakan hubungi melalui media sosial berikut:</p>
+        <div class="link-kontak">
+            <a href="https://instagram.com/[@raarcca]" target="_blank">📷 Instagram</a>
+            <a href="mailto:[@raisyakhai54.gmail.com]" target="_blank">✉️ Email</a>
+        </div>
+    </section>
+
+    <!-- ===== KAKI HALAMAN ===== -->
+    <footer>
+        <p>&copy; 2026 [Raisya Khairunnisa Fitri] — Semua Hak Dilindungi</p>
+    </footer>
+
+</body>
+</html
